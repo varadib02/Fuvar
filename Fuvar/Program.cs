@@ -16,14 +16,25 @@ namespace Fuvar
             
             Console.WriteLine($"3.feladat: {taxik.Count} fuvar");
             
-            Console.WriteLine($"4.feladat: {taxik.Where(x => x.azon == 6185).Count()} fuvar alatt: {taxik.Where(x=>x.azon==6185).Sum(x=>x.viteldij+x.borravalo)}$");
+            Console.WriteLine($"4.feladat: {taxik.Where(x => x.azon == 6185).Count()} fuvar alatt: {taxik.Where(x=>x.azon==6185).Sum(x=>x.viteldij)}$");
             
+
             Console.WriteLine($"5.feladat: ");
-            Console.WriteLine($"bankkártya {taxik.Where(x=>x.fizetesmod=="bankkártya").Count()} fuvar");
-            Console.WriteLine($"készpénz {taxik.Where(x=>x.fizetesmod== "készpénz").Count()} fuvar");
-            Console.WriteLine($"vitatott {taxik.Where(x=>x.fizetesmod== "vitatott").Count()} fuvar");
-            Console.WriteLine($"ingyenes {taxik.Where(x=>x.fizetesmod=="ingyenes").Count()} fuvar");
-            Console.WriteLine($"ismeretlen {taxik.Where(x=>x.fizetesmod=="ismeretlen").Count()} fuvar");
+            Console.WriteLine($"\tbankkártya {taxik.Where(x=>x.fizetesmod=="bankkártya").Count()} fuvar");
+            Console.WriteLine($"\tkészpénz {taxik.Where(x=>x.fizetesmod== "készpénz").Count()} fuvar");
+            Console.WriteLine($"\tvitatott {taxik.Where(x=>x.fizetesmod== "vitatott").Count()} fuvar");
+            Console.WriteLine($"\tingyenes {taxik.Where(x=>x.fizetesmod=="ingyenes").Count()} fuvar");
+            Console.WriteLine($"\tismeretlen {taxik.Where(x=>x.fizetesmod=="ismeretlen").Count()} fuvar");
+
+            Console.WriteLine("6.feladat: {0:0.00}km", taxik.Sum(x => x.tav * 1.6));
+            
+            Console.WriteLine($"7.feladat: Leghosszabb fuvar:");
+            taxi t=taxik.OrderBy(x => x.idotartam).Last();
+            Console.WriteLine($"\tFuvar hossza: {t.idotartam} másodperc");
+            Console.WriteLine($"\tTaxi azonosító: {t.azon}");
+            Console.WriteLine($"\tMegtett távolság: {t.tav} km");
+            Console.WriteLine($"\tViteldij: {t.viteldij}$");
+
         }
     }
 }
