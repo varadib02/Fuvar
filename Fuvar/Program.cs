@@ -13,6 +13,7 @@ namespace Fuvar
         {
             List<taxi> taxik = new List<taxi>();
             foreach (var sor in File.ReadAllLines("fuvar.csv").Skip(1)) taxik.Add(new taxi(sor));
+            Console.WriteLine($"3.feladat: {taxik.Count} fuvar");
         }
     }
 }
