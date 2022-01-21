@@ -35,6 +35,16 @@ namespace Fuvar
             Console.WriteLine($"\tMegtett távolság: {t.tav} km");
             Console.WriteLine($"\tViteldij: {t.viteldij}$");
 
+            Console.WriteLine($"8.feladat: hibak.txt");
+
+            StreamWriter sw = File.CreateText("hibak.txt");
+            sw.WriteLine("taxi_id;indulas;idotartam;tavolsag;viteldij;borravalo;fizetes_modja");
+            taxik
+                .Where(x=>x.idotartam>0 && x.viteldij>0 && x.tav==0)
+                .OrderBy(x => x.indulás)
+                .ToList()
+                .ForEach(x=>sw.WriteLine($"{x.azon};{x.indulás};{x.idotartam};{x.tav};{x.viteldij};{x.borravalo};{x.fizetesmod}"));
+
         }
     }
 }
