@@ -1,0 +1,6 @@
+H:\Prog\Fuvar\Fuvar\myclass\bin\Debug\myclass.dll
+H:\Prog\Fuvar\Fuvar\myclass\bin\Debug\myclass.pdb
+H:\Prog\Fuvar\Fuvar\myclass\obj\Debug\myclass.csproj.AssemblyReference.cache
+H:\Prog\Fuvar\Fuvar\myclass\obj\Debug\myclass.csproj.CoreCompileInputs.cache
+H:\Prog\Fuvar\Fuvar\myclass\obj\Debug\myclass.dll
+H:\Prog\Fuvar\Fuvar\myclass\obj\Debug\myclass.pdb

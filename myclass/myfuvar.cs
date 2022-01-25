@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fuvar
+namespace myclass_Fuvar
 {
-    class taxi
+    public class taxi
     {
         public int azon { get; set; }
         public DateTime indulás { get; set; }
@@ -25,7 +25,7 @@ namespace Fuvar
             viteldij = double.Parse(db[4]);
             borravalo = double.Parse(db[5]);
             fizetesmod = db[6];
-            
+
         }
     }
 }

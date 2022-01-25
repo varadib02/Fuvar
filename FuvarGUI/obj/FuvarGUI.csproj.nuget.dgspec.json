@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\Prog\\Fuvar\\Fuvar\\FuvarGUI\\FuvarGUI.csproj": {}
+  },
+  "projects": {
+    "H:\\Prog\\Fuvar\\Fuvar\\FuvarGUI\\FuvarGUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Prog\\Fuvar\\Fuvar\\FuvarGUI\\FuvarGUI.csproj",
+        "projectName": "FuvarGUI",
+        "projectPath": "H:\\Prog\\Fuvar\\Fuvar\\FuvarGUI\\FuvarGUI.csproj",
+        "packagesPath": "C:\\Users\\varadib.513iv\\.nuget\\packages\\",
+        "outputPath": "H:\\Prog\\Fuvar\\Fuvar\\FuvarGUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\varadib.513iv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "H:\\Prog\\Fuvar\\Fuvar\\myclass\\myclass.csproj": {
+                "projectPath": "H:\\Prog\\Fuvar\\Fuvar\\myclass\\myclass.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Prog\\Fuvar\\Fuvar\\myclass\\myclass.csproj": {
+      "restore": {
+        "projectUniqueName": "H:\\Prog\\Fuvar\\Fuvar\\myclass\\myclass.csproj",
+        "projectName": "myclass",
+        "projectPath": "H:\\Prog\\Fuvar\\Fuvar\\myclass\\myclass.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

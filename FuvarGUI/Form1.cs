@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using Fuvar;
+using myclass_Fuvar;
 
 namespace FuvarGUI
 {
     public partial class FuvarGUI : Form
     {
+        List<taxi> olvas = new List<taxi>();
         public FuvarGUI()
         {
             InitializeComponent();
@@ -21,12 +22,15 @@ namespace FuvarGUI
         }
         private void btn_load_Click(object sender, EventArgs e)
         {
-            List<taxi> t = new List<taxi>();
-            beo(ref t);
-            foreach (var i in t)
+            
+            beo(ref olvas);
+            /*
+            foreach (var i in olvas)
             {
                 lB_fuvar.Items.Add(i.azon);
-            }
+            }*/
+            lB_fuvar.DataSource = olvas;
+            lB_fuvar.DisplayMember = "azon";
         }
         private void beo(ref List<taxi> t)
         {
@@ -35,12 +39,19 @@ namespace FuvarGUI
 
         private void lB_fuvar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<taxi> t = new List<taxi>();
-            beo(ref t);
-            selected_item(t);
+            //selected_item(olvas);
+            txtb_azon.Text=((taxi)lB_fuvar.SelectedItem).azon.ToString();
+            txtb_ind.Text = ((taxi)lB_fuvar.SelectedItem).indulás.ToString();
+            txtb_ido.Text = ((taxi)lB_fuvar.SelectedItem).idotartam.ToString();
+            txtb_tav.Text = ((taxi)lB_fuvar.SelectedItem).tav.ToString();
+            txtb_vdij.Text = ((taxi)lB_fuvar.SelectedItem).viteldij.ToString();
+            txtb_borravalo.Text = ((taxi)lB_fuvar.SelectedItem).borravalo.ToString();
+            txtb_fmod.Text = ((taxi)lB_fuvar.SelectedItem).fizetesmod.ToString();
         }
+        /*
         private void selected_item(List<taxi> t)
         {
+            
             foreach (var taxi in t)
             {
                 if (lB_fuvar.SelectedItem.ToString() == taxi.azon.ToString())
@@ -56,12 +67,7 @@ namespace FuvarGUI
 
             }
         }
-
-        private void btn_clear_Click(object sender, EventArgs e)
-        {
-            lB_fuvar.Items.Clear();
-        }
-
+        */
         private void btn_close_Click(object sender, EventArgs e) 
         {
             btn_close_confirm.Visible = true;
@@ -71,5 +77,43 @@ namespace FuvarGUI
         {
             Close();
         }
+
+        private void btn_order_Click(object sender, EventArgs e)
+        {
+            /*
+            orderup(ref olvas);
+            lB_fuvar.Items.Clear();
+            foreach (var i in olvas)
+            {
+                lB_fuvar.Items.Add(i.azon);
+            }
+            */
+            //List<taxi>f=olvas.OrderBy(x=>x.azon).ToList();
+            olvas=olvas.OrderBy(x => x.azon).ToList();
+            lB_fuvar.DataSource = olvas;
+            //lB_fuvar.DataSource = f;
+            //lB_fuvar.DisplayMember="azon";
+        }
+        /*
+        private void orderup(ref List<taxi>t) 
+        {
+         //növekvő   
+            for (int a = 0; a < t.Count - 2; a++)
+            {
+                for (int b = 0; b < t.Count - 2; b++)
+                {
+                    if (t[a].azon<t[b].azon)
+                    {
+                        taxi csere = t[a];
+                        t[a] = t[b];
+                        t[b] = csere;
+                    }
+                    
+                }
+            }
+
+        }
+        */
+
     }
 }

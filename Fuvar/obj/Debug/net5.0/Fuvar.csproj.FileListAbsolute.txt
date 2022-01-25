@@ -1,0 +1,15 @@
+H:\Prog\Fuvar\Fuvar\Fuvar\bin\Debug\net5.0\Fuvar.exe
+H:\Prog\Fuvar\Fuvar\Fuvar\bin\Debug\net5.0\Fuvar.deps.json
+H:\Prog\Fuvar\Fuvar\Fuvar\bin\Debug\net5.0\Fuvar.runtimeconfig.json
+H:\Prog\Fuvar\Fuvar\Fuvar\bin\Debug\net5.0\Fuvar.runtimeconfig.dev.json
+H:\Prog\Fuvar\Fuvar\Fuvar\bin\Debug\net5.0\Fuvar.dll
+H:\Prog\Fuvar\Fuvar\Fuvar\bin\Debug\net5.0\ref\Fuvar.dll
+H:\Prog\Fuvar\Fuvar\Fuvar\bin\Debug\net5.0\Fuvar.pdb
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\Fuvar.GeneratedMSBuildEditorConfig.editorconfig
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\Fuvar.AssemblyInfoInputs.cache
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\Fuvar.AssemblyInfo.cs
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\Fuvar.csproj.CoreCompileInputs.cache
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\Fuvar.dll
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\ref\Fuvar.dll
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\Fuvar.pdb
+H:\Prog\Fuvar\Fuvar\Fuvar\obj\Debug\net5.0\Fuvar.genruntimeconfig.cache

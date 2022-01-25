@@ -31,7 +31,6 @@ namespace FuvarGUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FuvarGUI));
             this.btn_load = new System.Windows.Forms.Button();
-            this.btn_clear = new System.Windows.Forms.Button();
             this.lB_fuvar = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@ namespace FuvarGUI
             this.label8 = new System.Windows.Forms.Label();
             this.btn_close_confirm = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
+            this.btn_order = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_load
@@ -61,16 +61,6 @@ namespace FuvarGUI
             this.btn_load.Text = "Load";
             this.btn_load.UseVisualStyleBackColor = true;
             this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
-            // 
-            // btn_clear
-            // 
-            this.btn_clear.Location = new System.Drawing.Point(93, 322);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(75, 23);
-            this.btn_clear.TabIndex = 1;
-            this.btn_clear.Text = "Clear";
-            this.btn_clear.UseVisualStyleBackColor = true;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // lB_fuvar
             // 
@@ -233,6 +223,16 @@ namespace FuvarGUI
             this.btn_close.UseVisualStyleBackColor = false;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
+            // btn_order
+            // 
+            this.btn_order.Location = new System.Drawing.Point(93, 322);
+            this.btn_order.Name = "btn_order";
+            this.btn_order.Size = new System.Drawing.Size(75, 23);
+            this.btn_order.TabIndex = 20;
+            this.btn_order.Text = "Order";
+            this.btn_order.UseVisualStyleBackColor = true;
+            this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
+            // 
             // FuvarGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -240,6 +240,7 @@ namespace FuvarGUI
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(424, 361);
+            this.Controls.Add(this.btn_order);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_close_confirm);
             this.Controls.Add(this.txtb_fmod);
@@ -258,7 +259,6 @@ namespace FuvarGUI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lB_fuvar);
-            this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_load);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -273,7 +273,6 @@ namespace FuvarGUI
         #endregion
 
         private System.Windows.Forms.Button btn_load;
-        private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.ListBox lB_fuvar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -292,6 +291,7 @@ namespace FuvarGUI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_close_confirm;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.Button btn_order;
     }
 }
 
