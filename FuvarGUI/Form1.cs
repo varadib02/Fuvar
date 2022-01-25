@@ -38,16 +38,12 @@ namespace FuvarGUI
             List<taxi> t = new List<taxi>();
             beo(ref t);
             selected_item(t);
-
-
         }
         private void selected_item(List<taxi> t)
         {
             foreach (var taxi in t)
             {
-                string azon_s = lB_fuvar.SelectedItem.ToString();
-                string tazon = taxi.azon.ToString();
-                if (tazon == azon_s)
+                if (lB_fuvar.SelectedItem.ToString() == taxi.azon.ToString())
                 {
                     txtb_azon.Text = taxi.azon.ToString();
                     txtb_ind.Text = taxi.indulás.ToString();
@@ -68,8 +64,7 @@ namespace FuvarGUI
 
         private void btn_close_Click(object sender, EventArgs e) 
         {
-            btn_close_confirm.Visible=true;
-                
+            btn_close_confirm.Visible = true;
         }
 
         private void btn_close_confirm_Click(object sender, EventArgs e)
